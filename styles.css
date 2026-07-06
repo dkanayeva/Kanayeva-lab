@@ -1,7 +1,7 @@
 /* ============================================================
    Kanayeva Biosensors Lab — shared styles
-   Token system (NU-aligned palette):
-   Color:  --bg #FFFFFF · --bg-panel #F4F6F9 · --bg-panel-2 #E9EDF3
+   Token system (NU-aligned palette, warm beige background):
+   Color:  --bg #FAF6EC · --bg-panel #F3EBD8 · --bg-panel-2 #EAE0C6
            --text #16223A · --text-muted #5C6B7E
            --teal #0B3D77 (NU navy, primary accent) · --amber #C08A1E (NU gold)
            --border rgba(11,36,66,.14)
@@ -11,9 +11,9 @@
 /* Fonts loaded via <link> tags in each page's <head> for reliability */
 
 :root{
-  --bg:#FFFFFF;
-  --bg-panel:#F4F6F9;
-  --bg-panel-2:#E9EDF3;
+  --bg:#FAF6EC;
+  --bg-panel:#F3EBD8;
+  --bg-panel-2:#EAE0C6;
   --text:#16223A;
   --text-muted:#5C6B7E;
   --teal:#0B3D77;
@@ -35,10 +35,6 @@ html{scroll-behavior:smooth}
 body{
   margin:0;
   background-color:var(--bg);
-  background-image:
-    linear-gradient(rgba(11,36,66,.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(11,36,66,.035) 1px, transparent 1px);
-  background-size:38px 38px;
   color:var(--text);
   font-family:var(--font-body);
   font-size:16px;
@@ -296,6 +292,10 @@ section h2{font-size:1.4rem; margin-bottom:14px;}
 .news-item{display:flex; gap:20px; padding:22px 0; border-top:1px solid var(--border);}
 .news-item:first-of-type{border-top:none}
 .news-date{font-family:var(--font-mono); font-size:.76rem; color:var(--text-muted); width:96px; flex-shrink:0; padding-top:3px;}
+.news-photo{
+  width:100%; max-width:320px; border-radius:10px; margin-top:12px;
+  border:1px solid var(--border); display:block;
+}
 
 /* form */
 .field{margin-bottom:18px;}
