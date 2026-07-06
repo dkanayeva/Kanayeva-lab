@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Kanayeva Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+
+  <button class="nav-toggle" aria-label="Toggle menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+  </button>
+
+  <nav class="sidebar">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">
+        <svg viewBox="0 0 32 32" fill="none">
+          <rect x="2" y="2" width="28" height="28" rx="5" stroke="#5EEAD4" stroke-width="1.2"/>
+          <path d="M7 21 L7 15 L12 15 L12 21 L17 21 L17 11 L22 11 L22 21 L25 21" stroke="#5EEAD4" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div><div class="brand-name">Kanayeva Lab</div></div>
+      </div>
+      <div class="brand-sub">BIOSENSORS &amp; DIAGNOSTICS<br>Nazarbayev University</div>
+    </a>
+    <ul class="nav-list">
+      <li><a href="index.html"><span class="nav-dot"></span>About &amp; Research</a></li>
+      <li><a href="team.html"><span class="nav-dot"></span>Group Members</a></li>
+      <li><a href="publications.html"><span class="nav-dot"></span>Publications</a></li>
+      <li><a href="news.html"><span class="nav-dot"></span>News</a></li>
+      <li><a href="join.html"><span class="nav-dot"></span>Join Us</a></li>
+      <li><a href="contact.html" class="active"><span class="nav-dot"></span>Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="page-head">
+      <div class="eyebrow violet">Get in touch</div>
+      <h1>Contact</h1>
+      <p class="lede">For collaborations, prospective students, media inquiries, or anything else.</p>
+    </div>
+
+    <section>
+      <div class="grid-2">
+        <div class="panel">
+          <h3 style="font-size:1rem">Dr. Damira Kanayeva</h3>
+          <p style="margin-bottom:6px">Associate Professor, Department of Biology</p>
+          <p style="margin-bottom:6px">Nazarbayev University</p>
+          <p style="margin-bottom:6px">Office 7e.542 · Lab C4.644</p>
+          <p style="margin-bottom:6px"><a href="mailto:dkanayeva@nu.edu.kz" style="color:#5EEAD4">dkanayeva@nu.edu.kz</a></p>
+          <p style="margin-bottom:0">Tel: +7 7172 706642</p>
+        </div>
+        <div class="panel">
+          <h3 style="font-size:1rem">Mailing address</h3>
+          <p style="margin-bottom:12px">Department of Biology<br>Nazarbayev University<br>53 Kabanbay Batyr Avenue<br>Astana, 010000, Kazakhstan</p>
+          <a href="https://research.nu.edu.kz/en/persons/damira-kanayeva/" style="color:#5EEAD4">Research profile ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="arc-divider">
+      <span class="divider-mark"></span>
+      <div class="line"></div>
+    </div>
+
+    <section>
+      <h2>Send a message</h2>
+      <p>This form is a static placeholder — connect it to an email service (e.g. Formspree) or replace it with a mailto link before publishing.</p>
+      <form class="panel" onsubmit="event.preventDefault(); alert('Connect this form to an email service before publishing.');">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" type="text" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" required>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn primary">Send message</button>
+      </form>
+    </section>
+
+    <footer class="page-foot">
+      <span>Kanayeva Lab · Department of Biology, Nazarbayev University</span>
+      <span>Astana, Kazakhstan</span>
+    </footer>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
