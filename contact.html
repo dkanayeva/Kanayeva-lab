@@ -21,17 +21,18 @@
     <a href="index.html" class="brand">
       <div class="brand-mark">
         <svg viewBox="0 0 32 32" fill="none">
-          <rect x="2" y="2" width="28" height="28" rx="5" stroke="#5EEAD4" stroke-width="1.2"/>
-          <path d="M7 21 L7 15 L12 15 L12 21 L17 21 L17 11 L22 11 L22 21 L25 21" stroke="#5EEAD4" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="2" y="2" width="28" height="28" rx="5" stroke="#0B3D77" stroke-width="1.2"/>
+          <path d="M7 21 L7 15 L12 15 L12 21 L17 21 L17 11 L22 11 L22 21 L25 21" stroke="#0B3D77" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <div><div class="brand-name">Kanayeva Lab</div></div>
       </div>
-      <div class="brand-sub">BIOSENSORS &amp; DIAGNOSTICS<br>Nazarbayev University</div>
+      <div class="brand-sub">APTASENSORS &amp; DIAGNOSTICS<br>Nazarbayev University</div>
     </a>
     <ul class="nav-list">
       <li><a href="index.html"><span class="nav-dot"></span>About &amp; Research</a></li>
       <li><a href="team.html"><span class="nav-dot"></span>Group Members</a></li>
       <li><a href="publications.html"><span class="nav-dot"></span>Publications</a></li>
+      <li><a href="media.html"><span class="nav-dot"></span>Media &amp; Talks</a></li>
       <li><a href="news.html"><span class="nav-dot"></span>News</a></li>
       <li><a href="join.html"><span class="nav-dot"></span>Join Us</a></li>
       <li><a href="contact.html" class="active"><span class="nav-dot"></span>Contact</a></li>
@@ -52,13 +53,13 @@
           <p style="margin-bottom:6px">Associate Professor, Department of Biology</p>
           <p style="margin-bottom:6px">Nazarbayev University</p>
           <p style="margin-bottom:6px">Office 7e.542 · Lab C4.644</p>
-          <p style="margin-bottom:6px"><a href="mailto:dkanayeva@nu.edu.kz" style="color:#5EEAD4">dkanayeva@nu.edu.kz</a></p>
+          <p style="margin-bottom:6px"><a href="mailto:dkanayeva@nu.edu.kz" style="color:#0B3D77">dkanayeva@nu.edu.kz</a></p>
           <p style="margin-bottom:0">Tel: +7 7172 706642</p>
         </div>
         <div class="panel">
           <h3 style="font-size:1rem">Mailing address</h3>
           <p style="margin-bottom:12px">Department of Biology<br>Nazarbayev University<br>53 Kabanbay Batyr Avenue<br>Astana, 010000, Kazakhstan</p>
-          <a href="https://research.nu.edu.kz/en/persons/damira-kanayeva/" style="color:#5EEAD4">Research profile ↗</a>
+          <a href="https://research.nu.edu.kz/en/persons/damira-kanayeva/" style="color:#0B3D77">Research profile ↗</a>
         </div>
       </div>
     </section>
@@ -70,19 +71,22 @@
 
     <section>
       <h2>Send a message</h2>
-      <p>This form is a static placeholder — connect it to an email service (e.g. Formspree) or replace it with a mailto link before publishing.</p>
-      <form class="panel" onsubmit="event.preventDefault(); alert('Connect this form to an email service before publishing.');">
+      <p>Send a message directly — it goes straight to Dr. Kanayeva's inbox.</p>
+      <form class="panel" action="https://formsubmit.co/dkanayeva@nu.edu.kz" method="POST">
+        <input type="hidden" name="_subject" value="New message from the Kanayeva Lab website">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_template" value="table">
         <div class="field">
           <label for="name">Name</label>
-          <input id="name" type="text" required>
+          <input id="name" name="name" type="text" required>
         </div>
         <div class="field">
           <label for="email">Email</label>
-          <input id="email" type="email" required>
+          <input id="email" name="email" type="email" required>
         </div>
         <div class="field">
           <label for="message">Message</label>
-          <textarea id="message" rows="5" required></textarea>
+          <textarea id="message" name="message" rows="5" required></textarea>
         </div>
         <button type="submit" class="btn primary">Send message</button>
       </form>

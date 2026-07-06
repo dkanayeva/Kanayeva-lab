@@ -1,29 +1,29 @@
 /* ============================================================
    Kanayeva Biosensors Lab — shared styles
-   Token system:
-   Color:  --bg #0A0E13 · --bg-panel #10161D · --bg-panel-2 #161D26
-           --text #E8EDF1 · --text-muted #8A9BA8
-           --teal #5EEAD4 (signal trace) · --amber #F2B84B (status accent)
-           --border rgba(255,255,255,.08)
+   Token system (NU-aligned palette):
+   Color:  --bg #FFFFFF · --bg-panel #F4F6F9 · --bg-panel-2 #E9EDF3
+           --text #16223A · --text-muted #5C6B7E
+           --teal #0B3D77 (NU navy, primary accent) · --amber #C08A1E (NU gold)
+           --border rgba(11,36,66,.14)
    Type:   display = Space Grotesk · body = Inter · mono = JetBrains Mono
    ============================================================ */
 
 /* Fonts loaded via <link> tags in each page's <head> for reliability */
 
 :root{
-  --bg:#0A0E13;
-  --bg-panel:#10161D;
-  --bg-panel-2:#161D26;
-  --text:#E8EDF1;
-  --text-muted:#8A9BA8;
-  --teal:#5EEAD4;
-  --teal-dim:#3B7F79;
-  --amber:#F2B84B;
-  --violet:#A79BE0;
-  --violet-dim:rgba(167,155,224,.15);
-  --rose:#E0A0A8;
-  --rose-dim:rgba(224,160,168,.15);
-  --border:rgba(255,255,255,.08);
+  --bg:#FFFFFF;
+  --bg-panel:#F4F6F9;
+  --bg-panel-2:#E9EDF3;
+  --text:#16223A;
+  --text-muted:#5C6B7E;
+  --teal:#0B3D77;
+  --teal-dim:#6D93B8;
+  --amber:#C08A1E;
+  --violet:#5E7A99;
+  --violet-dim:rgba(94,122,153,.15);
+  --rose:#A9835A;
+  --rose-dim:rgba(169,131,90,.15);
+  --border:rgba(11,36,66,.14);
   --font-display:'Space Grotesk', -apple-system, 'Segoe UI', system-ui, sans-serif;
   --font-body:'Inter', -apple-system, 'Segoe UI', system-ui, sans-serif;
   --font-mono:'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
@@ -36,8 +36,8 @@ body{
   margin:0;
   background-color:var(--bg);
   background-image:
-    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+    linear-gradient(rgba(11,36,66,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(11,36,66,.035) 1px, transparent 1px);
   background-size:38px 38px;
   color:var(--text);
   font-family:var(--font-body);
@@ -46,7 +46,7 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 
-::selection{background:rgba(94,234,212,.28); color:var(--text);}
+::selection{background:rgba(11,61,119,.18); color:var(--text);}
 
 @media (prefers-reduced-motion: reduce){
   *{animation-duration:.001ms !important; transition-duration:.001ms !important; scroll-behavior:auto !important;}
@@ -132,7 +132,7 @@ strong{color:var(--text); font-weight:600}
 }
 .nav-list a:hover{background:var(--bg-panel-2); color:var(--text)}
 .nav-list a.active{color:var(--teal); background:var(--bg-panel-2);}
-.nav-list a.active .nav-dot{background:var(--teal); box-shadow:0 0 8px var(--teal)}
+.nav-list a.active .nav-dot{background:var(--teal);}
 .nav-dot{width:6px; height:6px; border-radius:50%; background:var(--text-muted); flex-shrink:0}
 
 /* mobile nav toggle */
@@ -227,12 +227,12 @@ section h2{font-size:1.4rem; margin-bottom:14px;}
   border-radius:7px;
   border:1px solid var(--teal-dim);
   color:var(--teal);
-  background:rgba(94,234,212,.06);
+  background:rgba(11,61,119,.05);
   transition:background .15s ease, transform .15s ease;
 }
-.btn:hover{background:rgba(94,234,212,.14)}
-.btn.primary{background:var(--teal); color:#04201C; border-color:var(--teal); font-weight:600}
-.btn.primary:hover{background:#7ff0dd}
+.btn:hover{background:rgba(11,61,119,.1)}
+.btn.primary{background:var(--teal); color:#FFFFFF; border-color:var(--teal); font-weight:600}
+.btn.primary:hover{background:#0F4C8F}
 
 /* people cards */
 .person{
@@ -325,6 +325,7 @@ footer.page-foot{
 .stat b{display:block; font-family:var(--font-display); font-size:1.7rem; color:var(--teal);}
 .stat:nth-child(2) b{color:var(--violet);}
 .stat:nth-child(3) b{color:var(--rose);}
+.stat:nth-child(4) b{color:var(--amber);}
 .stat span{font-family:var(--font-mono); font-size:.72rem; color:var(--text-muted); letter-spacing:.03em;}
 
 /* focus visibility */
