@@ -296,6 +296,8 @@ section h2{font-size:1.4rem; margin-bottom:14px;}
   width:100%; max-width:320px; border-radius:10px; margin-top:12px;
   border:1px solid var(--border); display:block;
 }
+.news-photo-row{display:flex; gap:10px; margin-top:12px; flex-wrap:wrap;}
+.news-photo-row img{width:150px; height:112px; object-fit:cover; border-radius:8px; border:1px solid var(--border);}
 
 /* form */
 .field{margin-bottom:18px;}
@@ -321,8 +323,9 @@ footer.page-foot{
 .hero .lede{font-size:1.1rem; max-width:620px;}
 .hero-actions{display:flex; gap:12px; margin-top:26px;}
 
-.stat-row{display:flex; gap:36px; margin-top:40px; flex-wrap:wrap;}
-.stat b{display:block; font-family:var(--font-display); font-size:1.7rem; color:var(--teal);}
+.stat-row{display:flex; gap:28px; margin-top:40px; flex-wrap:wrap;}
+.stat{display:flex; align-items:baseline; gap:8px; max-width:220px;}
+.stat b{font-family:var(--font-display); font-size:1.3rem; color:var(--teal); flex-shrink:0; white-space:nowrap;}
 .stat:nth-child(2) b{color:var(--violet);}
 .stat:nth-child(3) b{color:var(--rose);}
 .stat:nth-child(4) b{color:var(--amber);}
